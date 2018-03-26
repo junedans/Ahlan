@@ -48,7 +48,7 @@
       "cordova-plugin-file": {},
       "cordova-plugin-ionic": {
         "APP_ID": "8adcc905",
-        "CHANNEL_NAME": "Master",
+        "CHANNEL_NAME": "Production",
         "UPDATE_METHOD": "background"
       }
     }
