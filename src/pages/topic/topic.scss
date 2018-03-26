@@ -1,0 +1,35 @@
+$header-height: 120px;
+
+topic {
+    .topic-title {
+        i {
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+
+        p {
+            margin: 0;
+        }
+    }
+
+    .topic-page {
+        .scroll-content {
+            padding-top: $header-height;
+        }
+
+        .header {
+            .toolbar {
+                min-height: $header-height;
+
+                button {
+                    color: #000;
+                }
+            }
+        }
+
+        .card-text {
+            overflow: initial;
+            white-space: normal;
+        }
+    }
+}

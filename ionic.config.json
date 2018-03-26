@@ -1,0 +1,8 @@
+{
+  "name": "OneRefuge101",
+  "app_id": "8adcc905",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

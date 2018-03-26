@@ -1,0 +1,57 @@
+<ion-header >
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+
+    <ion-title class="category-title" [ngStyle]="{'background-color':selectedCategory.color }">
+      <p lang="ar" dir="rtl">{{selectedCategory.title}}</p>
+      <p lang="en" dir="ltr">{{selectedCategory.translation}}</p>
+    </ion-title>
+  </ion-navbar>
+
+  <ion-segment mode="md" [(ngModel)]="categoryTabs" [ngStyle]="{'background-color':selectedCategory.color }">
+      <ion-segment-button value="Topics">
+        <p lang="en" dir="rtl">المواضيع</p>
+        <p lang="en" dir="ltr">Topics</p>
+      </ion-segment-button>
+      <ion-segment-button value="Keywords">
+        <p lang="en" dir="rtl">الكلمات الدالة</p>
+        <p lang="en" dir="ltr">Keywords</p>
+      </ion-segment-button>
+  </ion-segment>
+</ion-header>
+
+<ion-content class="hero-banner" [ngSwitch]="categoryTabs" [ngClass]="{'keywords-active': categoryTabs === 'Keywords'}">
+  <div class="topics-tab" *ngSwitchCase="'Topics'">
+    <ion-grid  class="topic-list">
+      <ion-row *ngFor="let topicRow of topicRows">
+        <ion-col col-6 *ngFor="let topic of topicRow">
+          <button ion-item (click)="topicTapped($event, topic)" class="topic-button">
+            <i class="fal {{topic.icon}} fa-2x"></i>
+            <span lang="ar" dir="rtl">{{topic.title}}</span>
+            <span lang="en" dir="ltr">{{topic.translation}}</span>
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  <div padding class="keywords-tab" *ngSwitchCase="'Keywords'">
+    <ion-grid>
+      <ion-row *ngFor="let keyword of keywords">
+        <ion-col>
+          <span lang="en" dir="ltr">{{keyword.translation}}</span>
+        </ion-col>
+
+        <ion-col>
+          <span lang="ar" dir="rtl">{{keyword.keyword}}</span>
+        </ion-col>
+
+        <ion-col>
+          <span lang="ar" dir="rtl">{{keyword.phonetic['ar']}}</span>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>

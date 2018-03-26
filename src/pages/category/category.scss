@@ -1,0 +1,124 @@
+category {
+    .header {
+        .toolbar {
+            button {
+                color: #fff;
+            }
+
+            .title {
+                text-align: center;
+
+                p:first-child {
+                    margin-bottom: 0;
+                }
+
+                p:last-child {
+                    margin-top: 0;
+                }
+
+                .toolbar-title {
+                    color: #fff;
+                }
+            }
+        }
+
+        .segment .segment-button {
+            color: #fff;
+            opacity: 1;
+            font-weight: 300;
+            font-size: 13px;
+
+            &.segment-activated {
+                border-bottom: 4px solid #ffce4c;
+            }
+
+            p {
+                margin: 0;
+                line-height: normal;
+
+                &:first-child {
+                    margin-bottom: 2px;
+                }
+            }
+        }
+    }
+
+    .topic-list {
+        -webkit-column-count: 2;
+
+        .topic-button {
+            background-color: #fff;
+            height: 180px;
+            padding-left: 0;
+            -webkit-box-shadow: 0 0 3px 1px rgba(238, 238, 238, 1);
+            -moz-box-shadow: 0 0 3px 1px rgba(238, 238, 238, 1);
+            box-shadow: 0 0 3px 1px rgba(238, 238, 238, 1);
+
+            i {
+                margin-bottom: 16px;
+                min-height: 1em;
+            }
+
+            span {
+                min-height: 1em;
+
+                &:last-child {
+                    font-size: 16px;
+                }
+            }
+
+            .label {
+                overflow: inherit;
+                white-space: normal;
+            }
+
+            .item-inner {
+                padding-right: 0;
+                background-image: none;
+                border: 0;
+                text-align: center;
+                font-size: 1.1em;
+                white-space: normal;
+
+                span {
+                    display: block;
+                }
+            }
+        }
+
+        .item {
+            .item-icon {
+                display: block;
+            }
+        }
+    }
+
+    .keywords-active .scroll-content {
+        background-color: #fff;
+    }
+
+    .keywords-tab {
+        .row {
+            padding: 12px 0;
+            border-bottom: 1px solid #f4f4f4;
+
+            .col {
+                font-size: 16px;
+                font-weight: 500;
+
+                &:nth-child(2) {
+                    text-align: center;
+                }
+
+                &:last-child {
+                    text-align: right;
+                }
+
+                span {
+                    text-transform: capitalize;
+                    min-height: 1em;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.card-month {
+    .card-content {
+        text-align: center;
+
+        span:first-child {
+            display: block;
+            margin-bottom: 1em;
+        }
+
+        span:last-child {
+            display: block;
+        }
+    }
+
+    ion-col {
+        background-color: #ededed;
+
+        p {
+            text-align: center;
+            color: #000;
+        }
+    }
+}

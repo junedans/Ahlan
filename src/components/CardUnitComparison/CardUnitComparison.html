@@ -1,0 +1,22 @@
+<ion-card class="card-unit-comparison">
+    <div>
+        <img src=mImageUrl alt=""/>
+        <ion-card-content class="card-content">
+            <span lang="ar" dir="rtl" >{{mTranslatedTitle}}</span>
+            <span lang="en" dir="ltr" >{{mTitle}}</span>
+
+            <ion-grid>
+                <ion-row *ngFor="let unit of mUnits">
+                    <ion-col class="first-col">
+                    <p lang="ar" dir="rtl">{{unit.leftUnitTranslated}}</p>
+                    <p lang="en" dir="ltr">{{unit.leftValue}} {{unit.leftUnit}}</p>
+                    </ion-col>
+                    <ion-col class="second-col">
+                    <p lang="ar" dir="rtl">{{unit.rightUnitTranslated}}</p>
+                    <p lang="en" dir="ltr">{{unit.rightValue}} {{unit.rightUnit}}</p>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </ion-card-content>
+    </div>
+</ion-card>

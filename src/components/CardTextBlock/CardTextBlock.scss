@@ -1,0 +1,14 @@
+.card-text-block {
+    .card-content {
+        text-align: center;
+
+        span:first-child {
+            display: block;
+            margin-bottom: 1em;
+        }
+
+        span:last-child {
+            display: block;
+        }
+    }
+}

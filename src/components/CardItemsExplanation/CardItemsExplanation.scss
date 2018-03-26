@@ -1,0 +1,26 @@
+.card-items-explanation {
+    .card-content {
+        text-align: center;
+
+        span {
+            display: block;
+            margin-bottom: 1em;
+        }
+    }
+
+    ion-grid > ion-row {
+        position: relative;
+
+        ion-col {
+            i {
+                margin-bottom: 5px;
+                font-size: 2.5em;
+            }
+
+            p {
+                text-align: center;
+                color: #000;
+            }
+        }
+    }
+}

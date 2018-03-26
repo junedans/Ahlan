@@ -1,0 +1,41 @@
+category-list {
+    .header {
+        .toolbar {
+            button {
+                color: #aaa;
+            }
+
+            .title {
+                text-align: center;
+
+                p:first-child {
+                    margin-bottom: 0;
+                }
+
+                p:last-child {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+
+    .categories {
+        .category-item {
+            min-height: 110px;
+            text-align: center;
+            margin: 10px 0;
+            padding: 0 16px;
+
+            p {
+                color: #fff;
+                font-size: 1.3em;
+            }
+
+            .item-inner {
+                border: 0;
+                padding: 0;
+                background-image: none;
+            }
+        }
+    }
+}

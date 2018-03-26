@@ -1,0 +1,36 @@
+.card-unit-comparison {
+    .card-content {
+        text-align: center;
+
+        span:first-child {
+            display: block;
+            margin-bottom: 1em;
+        }
+
+        span:last-child {
+            display: block;
+        }
+    }
+
+    ion-grid {
+        margin-top: 1em;
+        font-weight: 900;
+    }
+
+    ion-col {
+        margin: 2px;
+
+        p {
+            text-align: center;
+            color: #000;
+        }
+    }
+
+    .first-col {
+        background-color: #ededed;
+    }
+
+    .second-col {
+        background-color: #dedede;
+    }
+}

@@ -1,0 +1,35 @@
+.card-example-comparison {
+    .example {
+        display: inline-block;
+        width: 50%;
+        position: relative;
+
+        & > i {
+            position: absolute;
+            right: 0;
+            color: #fff;
+            padding: 6px;
+            border-radius: 50%;
+            background-color: #62ad10;
+            margin: 6px;
+            top: 0;
+        }
+
+        &:nth-child(2) > i {
+            background-color: #ff3154;
+        }
+    }
+
+    .card-content {
+        text-align: center;
+
+        span:first-child {
+            display: block;
+            margin-bottom: 1em;
+        }
+
+        span:last-child {
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+<ion-card class="card-items-explanation">
+    <div>
+      <img src="http://via.placeholder.com/350x150" alt="" />
+      <ion-card-content class="card-content">
+        <!--TODO: Add description-->
+        <span lang="ar" dir="rtl">لماذا تفكر بذلك المستقبل للتنبؤ، واليشم دماغك إلى عبث الحيرة؟ يلقي الرعاية الخاصة بك، وترك خطط الله له - شكل كل منهم دون استشارة لك.</span>
+        <span lang="en">Why ponder thus the future to foresee, and jade thy brain to vain perplexity? Cast off thy care, leave Allah’s plans to him – He formed them all without consulting thee.</span>
+
+        <ion-grid>
+          <ion-row>
+            <ion-col *ngFor="let item of article.items">
+              <!-- TODO: Add fa-icon from API -->
+              <i class="fal fa-ambulance"></i>
+              <p lang="ar" dir="rtl">{{item.title["ar"]}}</p>
+              <p lang="en" dir="ltr">{{item.title["en-US"]}}</p>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card-content>
+    </div>
+  </ion-card>

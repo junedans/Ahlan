@@ -1,0 +1,177 @@
+{
+    "extends": [
+        "eslint:recommended"
+    ],
+    "rules": {
+        "no-bitwise": 2,
+        "camelcase": 0,
+        "curly": [
+            2,
+            "all"
+        ],
+        "eqeqeq": [
+            2,
+            "always"
+        ],
+        "guard-for-in": 2,
+        "no-extend-native": 2,
+        "wrap-iife": [
+            2,
+            "any"
+        ],
+        "no-use-before-define": [
+            2,
+            {
+                "functions": false
+            }
+        ],
+        "new-cap": 2,
+        "no-caller": 2,
+        "no-empty": 2,
+        "no-irregular-whitespace": 2,
+        "no-new": 2,
+        "no-plusplus": 0,
+        "quotes": [
+            2,
+            "single"
+        ],
+        "no-undef": 2,
+        "no-unused-vars": [
+            2,
+            { "argsIgnorePattern": "^base$" }
+        ],
+        "strict": [
+            2,
+            "function"
+        ],
+        "max-params": [
+            2,
+            15
+        ],
+        "max-depth": [
+            2,
+            5
+        ],
+        "max-statements": [
+            2,
+            50
+        ],
+        "complexity": [
+            2,
+            10
+        ],
+        "max-len": [
+            2,
+            150
+        ],
+        "no-var": 0,
+        "semi": [
+            2,
+            "always"
+        ],
+        "no-cond-assign": [
+            2,
+            "always"
+        ],
+        "no-debugger": 1,
+        "no-eq-null": 2,
+        "no-eval": 2,
+        "no-unused-expressions": 0,
+        "block-scoped-var": 0,
+        "no-iterator": 0,
+        "linebreak-style": 0,
+        "comma-style": [
+            2,
+            "last"
+        ],
+        "no-loop-func": 2,
+        "no-multi-str": 2,
+        "require-yield": 0,
+        "valid-typeof": 2,
+        "no-proto": 0,
+        "no-script-url": 0,
+        "no-shadow": 0,
+        "dot-notation": 2,
+        "no-new-func": 2,
+        "no-new-wrappers": 2,
+        "no-invalid-this": 0,
+        "no-dupe-args": 2,
+        "no-console": 2,
+        "no-labels": 2,
+        "no-negated-condition": 2,
+        "no-lonely-if": 1,
+        "no-dupe-keys": 2,
+        "no-extra-semi": 2,
+        "no-inner-declarations": [
+            2,
+            "functions"
+        ],
+        "no-invalid-regexp": 2,
+        "no-sparse-arrays": 2,
+        "no-unexpected-multiline": 2,
+        "no-unreachable": 2,
+        "no-unsafe-finally": 2,
+        "no-unsafe-negation": 2,
+        "valid-jsdoc": 2,
+        "no-multi-assign": 2,
+        "no-multiple-empty-lines": [
+            2,
+            { "max": 1 }
+        ],
+        "no-nested-ternary": 2,
+        "no-trailing-spaces": 2,
+        "no-unneeded-ternary": 2,
+        "spaced-comment": 0,
+        "switch-colon-spacing": [
+            "error",
+            {
+                "after": true,
+                "before": false
+            }
+        ],
+        "no-catch-shadow": 2,
+        "no-shadow-restricted-names": 2,
+        "array-callback-return": 2,
+        "no-alert": 1,
+        "no-empty-function": 0,
+        "no-empty-pattern": 2,
+        "no-fallthrough": 2,
+        "no-floating-decimal": 2,
+        "no-global-assign": 2,
+        "no-implicit-coercion": [
+            2,
+            {
+                "allow": [
+                    "!!"
+                ]
+            }
+        ],
+        "no-implied-eval": 2,
+        "no-multi-spaces": [
+            2,
+            { "ignoreEOLComments": true }
+        ],
+        "no-redeclare": 0,
+        "no-self-assign": 2,
+        "no-self-compare": 2,
+        "no-useless-escape": 2,
+        "no-useless-return": 2,
+        "yoda": 2,
+        "no-warning-comments": [
+            1,
+            {
+                "terms": [ "todo", "fixme", "jscs", "jshint"],
+                "location": "anywhere"
+            }
+        ]
+    },
+    "env": {
+        "browser": true,
+        "node": true,
+        "jasmine": true,
+        "phantomjs": true
+    },
+    "globals": {
+        "angular": true
+    }
+}

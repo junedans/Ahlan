@@ -1,0 +1,19 @@
+<ion-content class="topic-page">
+  <ion-header>
+    <ion-navbar>
+      <button menuToggle *ngIf="!selectedTopic">
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title class="topic-title">
+        <i class="fal {{selectedTopic.topic.icon}}"></i>
+        <p lang="ar" dir="rtl">{{selectedTopic.title}}</p>
+        <p lang="en" dir="ltr">{{selectedTopic.translation}}</p>
+      </ion-title>
+    </ion-navbar>
+  </ion-header>
+
+  <div padding class="article-list">
+    <template #articlesContainer>
+    </template>
+  </div>
+</ion-content>
