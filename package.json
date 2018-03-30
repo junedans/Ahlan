@@ -44,7 +44,12 @@
   "description": "An Ionic project",
   "cordova": {
     "plugins": {
-      "cordova-plugin-file": {}
+      "cordova-plugin-file": {},
+      "cordova-plugin-ionic": {
+        "APP_ID": "8adcc905",
+        "CHANNEL_NAME": "Master",
+        "UPDATE_METHOD": "auto"
+      }
     }
   }
 }
