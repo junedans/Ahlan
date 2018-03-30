@@ -33,19 +33,17 @@ export class CardUnitComparison {
 
   private loadUnits(units: Content.UnitComparison[]) {
     let temp: mUnitRowArray = [];
-    for (let i = 0; i < units.length; i++) {
-      if(units[i].leftUnit && units[i].rightUnit) {
-        temp.push({
-          leftUnit: units[i].leftUnit.name['en-US'],
-          leftUnitTranslated: units[i].leftUnit.name['ar'] ,
-          leftValue: units[i].leftUnit.value['en-US'],
-          rightUnit: units[i].rightUnit.name['en-US'],
-          rightUnitTranslated: units[i].rightUnit.name['ar'],
-          rightValue: units[i].rightUnit.value['en-US']
-        });
-      }
+    for (let i = 0; ((i < units.length) && units[i].leftUnit && units[i].rightUnit); i++) {
+      temp.push({
+        leftUnit: units[i].leftUnit.name['en-US'],
+        leftUnitTranslated: units[i].leftUnit.name['ar'] ,
+        leftValue: units[i].leftUnit.value['en-US'],
+        rightUnit: units[i].rightUnit.name['en-US'],
+        rightUnitTranslated: units[i].rightUnit.name['ar'],
+        rightValue: units[i].rightUnit.value['en-US']
+      });
     }
-
+    
     return temp;
   }
 }

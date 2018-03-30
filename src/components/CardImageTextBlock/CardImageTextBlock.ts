@@ -7,9 +7,9 @@ import * as Content from "../../model/appContent";
 })
 export class CardImageTextBlock {
   card: Content.CardImageTextBlock;
+  mImageUrl: string;
   mTitle: string;
   mTranslatedTitle: string;
-  mImageUrl: string;
 
   constructor() {
   }
