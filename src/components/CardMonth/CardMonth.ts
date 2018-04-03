@@ -12,15 +12,15 @@ export class CardMonth {
   static sLang1 = "en-US";
   static sLang2 = "ar";
   static sMonthIndexes = {
-    January:    "01",
-    February:   "02",
-    March:      "03",
-    April:      "04",
-    May:        "05",
-    June:       "06",
-    July:       "07",
-    August:     "08",
-    Sepetember: "09",
+    January:    "1",
+    February:   "2",
+    March:      "3",
+    April:      "4",
+    May:        "5",
+    June:       "6",
+    July:       "7",
+    August:     "8",
+    September:  "9",
     October:    "10",
     November:   "11",
     December:   "12"
@@ -34,11 +34,9 @@ export class CardMonth {
       var key = "";
       if (date instanceof Content.SpecificDate)
       {
-        key = (date as Content.SpecificDate).dayOfMonth[CardMonth.sLang1] + "";
-        if (key.length == 1) {
-          key = "0" + key;
-        }
-        key =  CardMonth.sMonthIndexes[this.card.title[CardMonth.sLang1]] + "/" + key;
+        key =  CardMonth.sMonthIndexes[this.card.title[CardMonth.sLang1]] +
+               "/" +
+               (date as Content.SpecificDate).dayOfMonth[CardMonth.sLang1];
       }
       else {
         var gdate = date as Content.GenericDate;
